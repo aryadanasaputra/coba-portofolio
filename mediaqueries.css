@@ -1,0 +1,10 @@
+/* Laptop */
+@media (max-width: 1366px) {
+    .navbar #desktop-nav {
+        display: none;
+    }
+
+    .navbar #hamburger-nav {
+        display: flex;
+    }
+}

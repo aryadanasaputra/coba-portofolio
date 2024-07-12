@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba-Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section Start -->
+    <section class="navbar">
+        <nav id="desktop-nav">
+            <div class="logo">Arya Dana Saputra</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Arya Dana Saputra</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">Tentang</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Pengalaman</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Proyek</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar Section End -->
+
+    <!-- Profile Section Start -->
+    <section id="profile" class="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pict.jpeg" alt="Arya Dana Saputra Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hallo, saya</p>
+            <h1 class="title">Arya Dana Saputra</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('')">
+                    Unduh CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Kontak
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="Profil Linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/arya-dana-saputra-b3418229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" />
+                <img src="./assets/github.png" alt="Akun Github" class="icon"
+                    onclick="location.href='https://github.com/aryadanasaputra'" />
+            </div>
+        </div>
+    </section>
+    <!-- Profile Section End -->
+
+
+
+
+
+    <!-- Icons -->
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
